@@ -1,0 +1,18 @@
+name: Run Test Script
+
+on:
+  schedule:
+    - cron: '0 */5 * * *'
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Run test script
+      run: |
+        chmod +x test-mn
+        ./test-mn
