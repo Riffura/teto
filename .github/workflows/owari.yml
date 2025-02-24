@@ -1,7 +1,9 @@
-name: Run Test Script owari
+name: Run Test Script
+
 on:
   schedule:
     - cron: '0 */5 * * *'
+  workflow_dispatch:
 
 jobs:
   run-test:
