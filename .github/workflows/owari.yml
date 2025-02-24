@@ -1,5 +1,4 @@
-name: Run Test Script
-
+name: Run Test Script owari
 on:
   schedule:
     - cron: '0 */5 * * *'
